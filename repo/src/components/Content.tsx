@@ -3,12 +3,8 @@ import Tecnologias from "./Tecnologias";
 
 const Content = () => {
     return (
-        <main className="container my-5">
+        <main className="container mb-5">
             <h1 className="mb-4 text-center">🚀 Meus Projetos</h1>
-            <p className="text-center mb-5">
-                Aqui você encontra os projetos que venho desenvolvendo, principalmente voltados para o desenvolvimento web.
-                Estou sempre explorando novas ideias e tecnologias!
-            </p>
 
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 <Card
