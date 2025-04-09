@@ -1,4 +1,10 @@
-const Card = ({ title, content, textBtn }) => {
+type Props = {
+    title: string,
+    content: string,
+    textBtn: string
+};
+
+const Card = ({ title, content, textBtn }:Props) => {
     return (
         <div className="col">
             <div className="card h-100 shadow-sm">
