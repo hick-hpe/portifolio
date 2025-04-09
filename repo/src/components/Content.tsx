@@ -1,4 +1,5 @@
 import Card from "./Card";
+import Tecnologias from "./Tecnologias";
 
 const Content = () => {
     return (
@@ -37,12 +38,7 @@ const Content = () => {
                 </div>
             </div>
 
-            <div className="mt-5">
-                <h2 className="text-center mb-4">🛠️ Tecnologias que uso</h2>
-                <p className="text-center">
-                    React • JavaScript • Node.js • Express • Django • Python • Bootstrap • Git • Docker • Linux
-                </p>
-            </div>
+            <Tecnologias />
         </main>
     )
 };
