@@ -43,6 +43,23 @@ const Tecnologias = () => {
                 <div style={{ backgroundColor: '#000', color: '#fff', maxWidth: 'max-content', padding: '10px', borderRadius: '10px' }}>
                     <img src="/Linux.png" height={30} style={{ marginRight: '8px' }} /> Linux
                 </div>
+
+                <div style={{ backgroundColor: '#2496ED', color: '#fff', maxWidth: 'max-content', padding: '10px', borderRadius: '10px' }}>
+                    <img src="/Java.png" height={30} style={{ marginRight: '8px' }} /> Java
+                </div>
+
+                <div style={{ backgroundColor: '#777BB4', color: '#fff', maxWidth: 'max-content', padding: '10px', borderRadius: '10px' }}>
+                    <img src="/PHP.png" height={30} style={{ marginRight: '8px' }} /> PHP
+                </div>
+
+                <div style={{ backgroundColor: '#000000', color: '#fff', maxWidth: 'max-content', padding: '10px', borderRadius: '10px' }}>
+                    <img src="/Flask.png" height={30} style={{ marginRight: '8px' }} /> Flask
+                </div>
+
+                <div style={{ backgroundColor: '#3178C6', color: '#fff', maxWidth: 'max-content', padding: '10px', borderRadius: '10px' }}>
+                    <img src="/TypeScript.png" height={30} style={{ marginRight: '8px' }} /> TypeScript
+                </div>
+
             </div>
         </div>
     )

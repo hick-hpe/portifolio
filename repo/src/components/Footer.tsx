@@ -1,3 +1,6 @@
+// css .footer
+
+
 const Footer = () => {
     return (
         <footer className="bg-dark text-light py-5 mt-5">
@@ -18,6 +21,16 @@ const Footer = () => {
                         </a>
                     </p>
                 </div>
+
+                {/* 
+                    no celular
+                    <div className="footer d-flex justify-content-around w-100">
+                    */}
+
+                {/*
+                    em dispositivos maiores
+                    <div className="footer d-flex justify-content-between w-50">
+                    */}
 
                 {/* Mini Menu */}
                 <div>
@@ -61,7 +74,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer >
     );
 };
 
