@@ -64,6 +64,10 @@ const Page = styled.div`
             font-size: 0.95rem;
             margin-bottom: 15px;
             line-height: 1.4;
+            max-height: 100px;
+            /* overflow: hidden; */
+            /* text-overflow: ellipsis; */
+            overflow-y: auto;
         }
 
         .btn-blue {
@@ -119,12 +123,31 @@ const ProjetosList = () => {
                 <div className="card">
                     <img src="/image.png" alt="Outro projeto" />
                     <div className="card-body">
+                        <h5 className="card-title">TutorDev</h5>
+                        <p className="card-text">
+                            Um site para auxiliar alunos a encontrarem professores particulares. <br />
+                            <i>Em desenvolvimento - Desenvolvimento dos diagramas do projeto</i>
+                        </p>
+                        <a
+                            href="#"
+                            className="btn-blue"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className="bi bi-github"></i> Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div className="card">
+                    <img src="/image.png" alt="Outro projeto" />
+                    <div className="card-body">
                         <h5 className="card-title">Título</h5>
                         <p className="card-text">
                             Descrição breve do projeto. Aqui você pode detalhar a stack, funcionalidades ou objetivo.
                         </p>
                         <a
-                            href="#blog"
+                            href="#"
                             className="btn-blue"
                             target="_blank"
                             rel="noopener noreferrer"

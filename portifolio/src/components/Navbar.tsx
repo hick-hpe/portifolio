@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-darka p-3" style={{ backgroundColor: '#010f3d' }}>
@@ -12,10 +14,10 @@ const Navbar = () => {
                             <a className="nav-link" href="/">Início</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#sobre">Sobre Mim</a>
+                        <Link className="nav-link" to="/#sobre">Sobre Mim</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#experiencias">Experiências</a>
+                            <a className="nav-link" href="/#experiencias">Experiências</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/projetos">Projetos</a>
@@ -32,7 +34,7 @@ const Navbar = () => {
                             </ul>
                         </li> */}
                         <li className="nav-item">
-                            <a className="nav-link" href="#contato">Contato</a>
+                            <a className="nav-link" href="/#contato">Contato</a>
                         </li>
                     </ul>
                     <a className="btn btn-light" href="/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
