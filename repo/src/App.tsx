@@ -1,20 +1,20 @@
 import './App.css'
-import Navbar from './components/Navbar'
-import SobreMim from './components/SobreMim';
-import Content from './components/Content'
-import Contato from './components/Contato'
-import Footer from './components/Footer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Projetos from './pages/Projetos'
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <SobreMim />
-      <Content />
-      <Contato />
-      <Footer />
-    </>
-  )
+    return (
+        <>
+        <BrowserRouter>
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/projetos/web' element={<Projetos />} />
+            </Routes>
+        </BrowserRouter>
+        </>
+    )
 }
 
 export default App
+
