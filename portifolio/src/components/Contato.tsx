@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Page = styled.div`
@@ -65,15 +66,15 @@ const Contato = () => {
                 </div>
 
                 <div className="botoes-contato">
-                    <a href="mailto:palermohpe@email.com">
+                    <Link to='mailto:palermohpe@email.com' target="_blank" rel="noopener noreferrer">
                         <i className="bi bi-envelope-at-fill"></i> Email
-                    </a>
-                    <a href="https://github.com/hick-hpe" target="_blank" rel="noopener noreferrer">
+                    </Link>
+                    <Link to='https://github.com/hick-hpe'>
                         <i className="bi bi-github"></i> GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/seu-linkedin" target="_blank" rel="noopener noreferrer">
+                    </Link>
+                    <Link to='https://www.linkedin.com/in/Henrique-Palermo'>
                         <i className="bi bi-linkedin"></i> LinkedIn
-                    </a>
+                    </Link>
                 </div>
             </div>
         </Page>

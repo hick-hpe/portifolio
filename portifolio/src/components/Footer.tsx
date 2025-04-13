@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Page = styled.footer`
@@ -72,24 +73,25 @@ const Footer = () => {
                 <div className="footer-section">
                     <h5 className='text-light'>Navegação</h5>
                     <ul className="list-unstyled mb-0">
-                        <li><a href="/">Início</a></li>
-                        <li><a href="#sobre">Sobre Mim</a></li>
-                        <li><a href="/projetos">Projetos</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                        <li><Link to='/'>Início</Link></li>
+                        <li><Link to='/#sobre'>Sobre Mim</Link></li>
+                        <li><Link to='/#experiencias'>Experiências</Link></li>
+                        <li><Link to='/projetos'>Projetos</Link></li>
+                        <li><Link to='/#contato'>Contato</Link></li>
                     </ul>
                 </div>
 
                 <div className="footer-section">
                     <h5 className='text-light'>Contato</h5>
-                    <a href="https://github.com/hick-hpe" target="_blank" rel="noopener noreferrer">
-                        <i className="bi bi-github"></i> GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/seu-linkedin" target="_blank" rel="noopener noreferrer">
-                        <i className="bi bi-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="mailto:seuemail@email.com" target="_blank" rel="noopener noreferrer">
+                    <Link to='mailto:palermohpe@email.com' target="_blank" rel="noopener noreferrer">
                         <i className="bi bi-envelope-at-fill"></i> Email
-                    </a>
+                    </Link>
+                    <Link to='https://github.com/hick-hpe'>
+                        <i className="bi bi-github"></i> GitHub
+                    </Link>
+                    <Link to='https://www.linkedin.com/in/Henrique-Palermo'>
+                        <i className="bi bi-linkedin"></i> LinkedIn
+                    </Link>
                 </div>
             </div>
         </Page>
