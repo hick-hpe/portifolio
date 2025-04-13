@@ -22,22 +22,11 @@ const Navbar = () => {
                         <li className="nav-item">
                             <a className="nav-link" href="/projetos">Projetos</a>
                         </li>
-                        {/* <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" id="projetosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Projetos
-                            </a>
-                            <ul className="dropdown-menu" aria-labelledby="projetosDropdown">
-                                <li><a className="dropdown-item" href="/projetos/web">Web</a></li>
-                                <li><a className="dropdown-item" href="/projetos/mobile">Mobile</a></li>
-                                <li><a className="dropdown-item" href="/projetos/jogos">Jogos</a></li>
-                                <li><a className="dropdown-item" href="/projetos/outros">Outros</a></li>
-                            </ul>
-                        </li> */}
                         <li className="nav-item">
                             <a className="nav-link" href="/#contato">Contato</a>
                         </li>
                     </ul>
-                    <a className="btn btn-light" href="/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+                    <a className="btn btn-light" href="/Curriculo - Henrique Palermo Emerick.pdf" target="_blank" rel="noopener noreferrer">CV</a>
                 </div>
             </div>
         </nav>

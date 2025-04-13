@@ -50,7 +50,7 @@ const SobreMim = () => {
                     <span className='barra'></span>
                 </div>
                 <p className="card-text">
-                    Olá! Meu nome é <span className='text-info'>Henrique</span>. Sou estudante de Análise e Desenvolvimento de Sistemas, apaixonado por resolver problemas por meio da programação. Tenho me dedicado principalmente ao desenvolvimento web, mas estou sempre aberto a explorar novas áreas, principalmente a criação de jogos. Meu primeiro contato real com a área foi no ensino médio, através de um curso técnico integrado em Informática — e, desde então, venho me aprofundando cada vez mais nesse universo. Tenho experiências com tecnologias como:
+                    Olá! Meu nome é <span className='text-info'>Henrique</span>. Sou estudante de Análise e Desenvolvimento de Sistemas, um entusiasta em resolver problemas por meio da programação. Tenho me dedicado principalmente ao desenvolvimento web, mas estou sempre aberto a explorar novas áreas, principalmente a criação de jogos. Meu primeiro contato real com a área foi no ensino médio, através de um curso técnico integrado em Informática — e, desde então, venho me aprofundando cada vez mais nesse universo. Tenho experiências com tecnologias como:
                 </p>
                 <ul>
                     <li>ReactJS</li>
