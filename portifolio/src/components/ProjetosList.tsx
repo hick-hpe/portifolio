@@ -26,6 +26,7 @@ const Page = styled.div`
     }
 
     .cards {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -34,7 +35,7 @@ const Page = styled.div`
 
     .card {
         height: 350px;
-        width: calc(100% / 4);
+        /* width: calc(100% / ); */
         background-color: #fff;
         color: #010f3d;
         border-radius: 10px;
@@ -72,7 +73,7 @@ const Page = styled.div`
             overflow-y: auto;
         }
 
-        .btn-blue {
+        .btn-github {
             background-color: #010f3d;
             color: #fff;
             text-decoration: none;
@@ -92,6 +93,32 @@ const Page = styled.div`
                 margin-right: 6px;
             }
         }
+
+        .btn-live {
+            background-color: #1a1e2c;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+
+            &:hover {
+                background-color: #0b1f5f;
+            }
+
+            i {
+                margin-right: 6px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
     }
 `;
 
@@ -107,7 +134,7 @@ const ProjetosList = () => {
             </div>
 
             <div className="container cards">
-                <div className="card">
+                <div className="card col-4">
                     <img src="/projeto-react-blog.png" alt="Projeto React Blog" />
                     <div className="card-body">
                         <h5 className="card-title">MyBlog</h5>
@@ -116,16 +143,24 @@ const ProjetosList = () => {
                         </p>
                         <a
                             href="https://github.com/hick-hpe/react-blog"
-                            className="btn-blue"
+                            className="btn-github"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <i className="bi bi-github"></i> Ver no GitHub
                         </a>
+                        <a
+                            href="#"
+                            className="btn-live"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className="bi bi-box-arrow-up-right"></i> Ver Demo
+                        </a>
                     </div>
                 </div>
 
-                <div className="card">
+                <div className="card col-4">
                     <img src="/image.png" alt="Outro projeto" />
                     <div className="card-body">
                         <h5 className="card-title">DevQuiz</h5>
@@ -135,16 +170,24 @@ const ProjetosList = () => {
                         </p>
                         <a
                             href="#"
-                            className="btn-blue"
+                            className="btn-github"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <i className="bi bi-github"></i> Ver no GitHub
                         </a>
+                        <a
+                            href="#"
+                            className="btn-live"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className="bi bi-box-arrow-up-right"></i> Ver Demo
+                        </a>
                     </div>
                 </div>
 
-                <div className="card">
+                <div className="card col-4">
                     <img src="/image.png" alt="Outro projeto" />
                     <div className="card-body">
                         <h5 className="card-title">ProfessorHub</h5>
@@ -153,16 +196,24 @@ const ProjetosList = () => {
                         </p>
                         <a
                             href="#"
-                            className="btn-blue"
+                            className="btn-github"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <i className="bi bi-github"></i> Ver no GitHub
                         </a>
+                        <a
+                            href="#"
+                            className="btn-live"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className="bi bi-box-arrow-up-right"></i> Ver Demo
+                        </a>
                     </div>
                 </div>
 
-                <div className="card">
+                <div className="card col-4">
                     <img src="/image.png" alt="Outro projeto" />
                     <div className="card-body">
                         <h5 className="card-title">Título do Projeto</h5>
@@ -171,16 +222,24 @@ const ProjetosList = () => {
                         </p>
                         <a
                             href="#"
-                            className="btn-blue"
+                            className="btn-github"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <i className="bi bi-github"></i> Ver no GitHub
                         </a>
+                        <a
+                            href="#"
+                            className="btn-live"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className="bi bi-box-arrow-up-right"></i> Ver Demo
+                        </a>
                     </div>
                 </div>
 
-                <div className="card">
+                <div className="card col-4">
                     <img src="/image.png" alt="Outro projeto" />
                     <div className="card-body">
                         <h5 className="card-title">Título do Projeto</h5>
@@ -189,16 +248,24 @@ const ProjetosList = () => {
                         </p>
                         <a
                             href="#"
-                            className="btn-blue"
+                            className="btn-github"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <i className="bi bi-github"></i> Ver no GitHub
                         </a>
+                        <a
+                            href="#"
+                            className="btn-live"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className="bi bi-box-arrow-up-right"></i> Ver Demo
+                        </a>
                     </div>
                 </div>
 
-                <div className="card">
+                <div className="card col-4">
                     <img src="/image.png" alt="Outro projeto" />
                     <div className="card-body">
                         <h5 className="card-title">Título do Projeto</h5>
@@ -207,11 +274,19 @@ const ProjetosList = () => {
                         </p>
                         <a
                             href="#"
-                            className="btn-blue"
+                            className="btn-github"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <i className="bi bi-github"></i> Ver no GitHub
+                        </a>
+                        <a
+                            href="#"
+                            className="btn-live"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className="bi bi-box-arrow-up-right"></i> Ver Demo
                         </a>
                     </div>
                 </div>
