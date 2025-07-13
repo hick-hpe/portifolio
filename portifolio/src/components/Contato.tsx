@@ -52,6 +52,16 @@ const Page = styled.div`
                 font-size: 1.2rem;
             }
         }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+
+            a {
+                width: 80%;
+                justify-content: center;
+            }
+        }
     }
 `;
 
