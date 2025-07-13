@@ -50,7 +50,7 @@ const SobreMim = () => {
                     <span className='barra'></span>
                 </div>
                 <p className="card-text">
-                    Olá! Meu nome é <span className='text-info'>Henrique</span>. Sou estudante de Análise e Desenvolvimento de Sistemas, um entusiasta em resolver problemas por meio da programação. Tenho me dedicado principalmente ao desenvolvimento web, mas estou sempre aberto a explorar novas áreas, principalmente a criação de jogos. Meu primeiro contato real com a área foi no ensino médio, através de um curso técnico integrado em Informática — e, desde então, venho me aprofundando cada vez mais nesse universo. Tenho experiências com tecnologias como:
+                    Sou formado em Técnico em Informática, curso integrado ao Ensino Médio, onde adquiri minha base em desenvolvimento. Tenho conhecimentos em JavaScript, React, HTML5 e CSS3, com foco na criação de interfaces de usuário interativas e responsivas. Também possuo experiência no back-end, desenvolvendo APIs e sistemas com Node.js e Django. Durante meu estágio na Compass UOL, aprofundei meus conhecimentos em Linux e Docker.
                 </p>
                 <ul>
                     <li>ReactJS</li>
@@ -63,11 +63,8 @@ const SobreMim = () => {
                     <li>Docker</li>
                     <li>Linux</li>
                     <li>MySQL</li>
-                    <li>MongoDB</li>
                     <li>JavaScript</li>
-                    <li>TypeScript</li>
                     <li>Python</li>
-                    <li>Java</li>
                 </ul>
             </div>
         </Page>

@@ -33,13 +33,15 @@ const Page = styled.div`
     }
 
     .card {
-        width: 280px;
+        height: 350px;
+        width: calc(100% / 4);
         background-color: #fff;
         color: #010f3d;
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         transition: transform 0.2s ease;
+        cursor: pointer;
 
         &:hover {
             transform: translateY(-5px);
@@ -78,6 +80,9 @@ const Page = styled.div`
             padding: 8px 14px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
 
             &:hover {
                 background-color: #0b1f5f;
@@ -123,10 +128,10 @@ const ProjetosList = () => {
                 <div className="card">
                     <img src="/image.png" alt="Outro projeto" />
                     <div className="card-body">
-                        <h5 className="card-title">TutorDev</h5>
+                        <h5 className="card-title">DevQuiz</h5>
                         <p className="card-text">
-                            Um site para auxiliar alunos a encontrarem professores particulares. <br />
-                            <i>Em desenvolvimento - Desenvolvimento dos diagramas do projeto</i>
+                            Um site de quizzes da disciplina de TADS para auxiliar alunos a estudarem, com emissão de certificados como gamificação. <br />
+                            <i>Em desenvolvimento</i>
                         </p>
                         <a
                             href="#"
@@ -142,9 +147,63 @@ const ProjetosList = () => {
                 <div className="card">
                     <img src="/image.png" alt="Outro projeto" />
                     <div className="card-body">
-                        <h5 className="card-title">Título</h5>
+                        <h5 className="card-title">ProfessorHub</h5>
                         <p className="card-text">
-                            Descrição breve do projeto. Aqui você pode detalhar a stack, funcionalidades ou objetivo.
+                            Um website para auxiliar os professores a realizar o planejamento das aulas.
+                        </p>
+                        <a
+                            href="#"
+                            className="btn-blue"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className="bi bi-github"></i> Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div className="card">
+                    <img src="/image.png" alt="Outro projeto" />
+                    <div className="card-body">
+                        <h5 className="card-title">Título do Projeto</h5>
+                        <p className="card-text">
+                            Descrição do projeto. Mostrar funcionalidades ou objetivo.
+                        </p>
+                        <a
+                            href="#"
+                            className="btn-blue"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className="bi bi-github"></i> Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div className="card">
+                    <img src="/image.png" alt="Outro projeto" />
+                    <div className="card-body">
+                        <h5 className="card-title">Título do Projeto</h5>
+                        <p className="card-text">
+                            Descrição do projeto. Mostrar funcionalidades ou objetivo.
+                        </p>
+                        <a
+                            href="#"
+                            className="btn-blue"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className="bi bi-github"></i> Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div className="card">
+                    <img src="/image.png" alt="Outro projeto" />
+                    <div className="card-body">
+                        <h5 className="card-title">Título do Projeto</h5>
+                        <p className="card-text">
+                            Descrição do projeto. Mostrar funcionalidades ou objetivo.
                         </p>
                         <a
                             href="#"

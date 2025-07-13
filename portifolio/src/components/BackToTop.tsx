@@ -30,6 +30,7 @@ const Button = styled.button`
 
 const BackToTop = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const [lastScrollY, setLastScrollY] = useState(0);
     const MIN_SCROLL_TO_VISIBLE = 400;
 
     useEffect(() => {
@@ -39,6 +40,10 @@ const BackToTop = () => {
             } else {
                 setIsVisible(false);
             }
+
+            if (lastScrollY) 1;
+
+            setLastScrollY(window.scrollY);
         };
 
         window.addEventListener("scroll", toggleVisibility);

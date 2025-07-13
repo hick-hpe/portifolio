@@ -23,7 +23,6 @@ const Page = styled.div`
         transform: translateY(0);
     }
 }
-
 `;
 
 const Hero = () => {
@@ -33,7 +32,7 @@ const Hero = () => {
                 <h1 className="card-title text-light">
                     Henrique Palermo
                 </h1>
-                <small className="lead text-muted">Desenvolvedor Frontend | Desenvolvedor Backend</small>
+                <small className="lead text-muted">Desenvolvedor Full-Stack</small>
                 <Link className="d-block mt-3 btn btn-light p-2 fs-5" to="https://github.com/hick-hpe">
                     <i className="bi bi-github"></i> Ver GitHub
                 </Link>
