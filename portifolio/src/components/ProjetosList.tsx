@@ -126,7 +126,7 @@ const ProjetosList = () => {
 
             <div className="container cards d-flex flex-wrap">
                 <div className="card">
-                    <img src="/projeto-react-blog.png" alt="Projeto React Blog" />
+                    <img src="/img/projeto-react-blog.png" alt="Projeto React Blog" />
                     <div className="card-body">
                         <h5 className="card-title">MyBlog</h5>
                         <p className="card-text">
@@ -154,7 +154,7 @@ const ProjetosList = () => {
                 </div>
 
                 <div className="card">
-                    <img src="/image.png" alt="Outro projeto" />
+                    <img src="/img/image.png" alt="Outro projeto" />
                     <div className="card-body">
                         <h5 className="card-title">DevQuiz</h5>
                         <p className="card-text">
@@ -183,7 +183,7 @@ const ProjetosList = () => {
                 </div>
 
                 <div className="card">
-                    <img src="/professorhub.png" alt="Outro projeto" />
+                    <img src="/img/professorhub.png" alt="Outro projeto" />
                     <div className="card-body">
                         <h5 className="card-title">ProfessorHub</h5>
                         <p className="card-text">
@@ -212,7 +212,7 @@ const ProjetosList = () => {
                 </div>
 
                 <div className="card">
-                    <img src="/tic-tac-toe.png" alt="Outro projeto" />
+                    <img src="/img/tic-tac-toe.png" alt="Outro projeto" />
                     <div className="card-body">
                         <h5 className="card-title">Tic Tac Toe</h5>
                         <p className="card-text">
@@ -248,7 +248,7 @@ const ProjetosList = () => {
                 </div>
 
                 <div className="card">
-                    <img src="/image.png" alt="Outro projeto" />
+                    <img src="/img/image.png" alt="Outro projeto" />
                     <div className="card-body">
                         <h5 className="card-title">Título do Projeto</h5>
                         <p className="card-text">
@@ -276,7 +276,7 @@ const ProjetosList = () => {
                 </div>
 
                 <div className="card">
-                    <img src="/image.png" alt="Outro projeto" />
+                    <img src="/img/image.png" alt="Outro projeto" />
                     <div className="card-body">
                         <h5 className="card-title">Título do Projeto</h5>
                         <p className="card-text">
