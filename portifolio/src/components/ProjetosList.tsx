@@ -34,12 +34,11 @@ const Page = styled.div`
     }
 
     .card {
-        height: 350px;
-        /* width: calc(100% / ); */
+        /* height: 380px; */
+        width: clamp(300px, 30vw, 400px);
         background-color: #fff;
         color: #010f3d;
         border-radius: 10px;
-        overflow: hidden;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         transition: transform 0.2s ease;
         cursor: pointer;
@@ -55,21 +54,19 @@ const Page = styled.div`
         }
 
         .card-body {
-            padding: 20px;
+            padding: 15px;
         }
 
         .card-title {
             font-size: 1.3rem;
-            margin-bottom: 10px;
+            border-bottom: 2px solid #010f3d;
+            padding-bottom: 10px;
         }
 
         .card-text {
             font-size: 0.95rem;
-            margin-bottom: 15px;
             line-height: 1.4;
-            max-height: 100px;
-            /* overflow: hidden; */
-            /* text-overflow: ellipsis; */
+            height: 90px;
             overflow-y: auto;
         }
 
@@ -81,9 +78,6 @@ const Page = styled.div`
             padding: 8px 14px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
 
             &:hover {
                 background-color: #0b1f5f;
@@ -102,9 +96,6 @@ const Page = styled.div`
             padding: 8px 14px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
 
             &:hover {
                 background-color: #0b1f5f;
@@ -133,34 +124,36 @@ const ProjetosList = () => {
                 </div>
             </div>
 
-            <div className="container cards">
-                <div className="card col-4">
+            <div className="container cards d-flex flex-wrap">
+                <div className="card">
                     <img src="/projeto-react-blog.png" alt="Projeto React Blog" />
                     <div className="card-body">
                         <h5 className="card-title">MyBlog</h5>
                         <p className="card-text">
                             Blog em React que permite criar e visualizar posts com título e descrição. Projeto simples, limpo e funcional.
                         </p>
-                        <a
-                            href="https://github.com/hick-hpe/react-blog"
-                            className="btn-github"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="bi bi-github"></i> Ver no GitHub
-                        </a>
-                        <a
-                            href="#"
-                            className="btn-live"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="bi bi-box-arrow-up-right"></i> Ver Demo
-                        </a>
+                        <div className='d-flex justify-content-between'>
+                            <a
+                                href="https://github.com/hick-hpe/react-blog"
+                                className="btn-github"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="bi bi-github"></i> Ver no GitHub
+                            </a>
+                            <a
+                                href="#"
+                                className="btn-live"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="bi bi-box-arrow-up-right"></i> Ver Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div className="card col-4">
+                <div className="card">
                     <img src="/image.png" alt="Outro projeto" />
                     <div className="card-body">
                         <h5 className="card-title">DevQuiz</h5>
@@ -168,126 +161,145 @@ const ProjetosList = () => {
                             Um site de quizzes da disciplina de TADS para auxiliar alunos a estudarem, com emissão de certificados como gamificação. <br />
                             <i>Em desenvolvimento</i>
                         </p>
-                        <a
-                            href="#"
-                            className="btn-github"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="bi bi-github"></i> Ver no GitHub
-                        </a>
-                        <a
-                            href="#"
-                            className="btn-live"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="bi bi-box-arrow-up-right"></i> Ver Demo
-                        </a>
+                        <div className='d-flex justify-content-between'>
+                            <a
+                                href="https://github.com/hick-hpe/projeto-Integrador-2025"
+                                className="btn-github"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="bi bi-github"></i> Ver no GitHub
+                            </a>
+                            <a
+                                href="#"
+                                className="btn-live"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="bi bi-box-arrow-up-right"></i> Ver Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div className="card col-4">
-                    <img src="/image.png" alt="Outro projeto" />
+                <div className="card">
+                    <img src="/professorhub.png" alt="Outro projeto" />
                     <div className="card-body">
                         <h5 className="card-title">ProfessorHub</h5>
                         <p className="card-text">
-                            Um website para auxiliar os professores a realizar o planejamento das aulas.
+                            Um website para auxiliar os professores a realizar o planejamento das aulas. <br />
+                            <i>Em desenvolvimento</i>
                         </p>
-                        <a
-                            href="#"
-                            className="btn-github"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="bi bi-github"></i> Ver no GitHub
-                        </a>
-                        <a
-                            href="#"
-                            className="btn-live"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="bi bi-box-arrow-up-right"></i> Ver Demo
-                        </a>
+                        <div className='d-flex justify-content-between'>
+                            <a
+                                href="#"
+                                className="btn-github"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="bi bi-github"></i> Ver no GitHub
+                            </a>
+                            <a
+                                href="#"
+                                className="btn-live"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="bi bi-box-arrow-up-right"></i> Ver Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div className="card col-4">
+                <div className="card">
+                    <img src="/tic-tac-toe.png" alt="Outro projeto" />
+                    <div className="card-body">
+                        <h5 className="card-title">Tic Tac Toe</h5>
+                        <p className="card-text">
+                            Este projeto é um jogo da velha (Tic Tac Toe) com suporte a multiplayer em tempo real, utilizando Socket.IO. <br /><br />
+                            Todas as funcionalidades foram desenvolvidas em branches separadas ao longo do processo. A branch main representa a versão final e estável do projeto, contendo todas as funcionalidades integradas:
+                            <ul>
+                                <li>Criação de salas de jogo</li>
+                                <li>Jogo multiplayer em tempo real</li>
+                                <li>Interface amigável e responsiva</li>
+                                <li>Histórico de partidas</li>
+                                <li>Chat integrado</li>
+                            </ul>
+                        </p>
+                        <div className='d-flex justify-content-between'>
+                            <a
+                                href="https://github.com/hick-hpe/tic-tac-toe"
+                                className="btn-github"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="bi bi-github"></i> Ver no GitHub
+                            </a>
+                            <a
+                                href="https://tic-tac-toe-8woi.onrender.com/"
+                                className="btn-live"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="bi bi-box-arrow-up-right"></i> Ver Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="card">
                     <img src="/image.png" alt="Outro projeto" />
                     <div className="card-body">
                         <h5 className="card-title">Título do Projeto</h5>
                         <p className="card-text">
                             Descrição do projeto. Mostrar funcionalidades ou objetivo.
                         </p>
-                        <a
-                            href="#"
-                            className="btn-github"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="bi bi-github"></i> Ver no GitHub
-                        </a>
-                        <a
-                            href="#"
-                            className="btn-live"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="bi bi-box-arrow-up-right"></i> Ver Demo
-                        </a>
+                        <div className='d-flex justify-content-between'>
+                            <a
+                                href="#"
+                                className="btn-github"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="bi bi-github"></i> Ver no GitHub
+                            </a>
+                            <a
+                                href="#"
+                                className="btn-live"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="bi bi-box-arrow-up-right"></i> Ver Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div className="card col-4">
+                <div className="card">
                     <img src="/image.png" alt="Outro projeto" />
                     <div className="card-body">
                         <h5 className="card-title">Título do Projeto</h5>
                         <p className="card-text">
                             Descrição do projeto. Mostrar funcionalidades ou objetivo.
                         </p>
-                        <a
-                            href="#"
-                            className="btn-github"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="bi bi-github"></i> Ver no GitHub
-                        </a>
-                        <a
-                            href="#"
-                            className="btn-live"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="bi bi-box-arrow-up-right"></i> Ver Demo
-                        </a>
-                    </div>
-                </div>
-
-                <div className="card col-4">
-                    <img src="/image.png" alt="Outro projeto" />
-                    <div className="card-body">
-                        <h5 className="card-title">Título do Projeto</h5>
-                        <p className="card-text">
-                            Descrição do projeto. Mostrar funcionalidades ou objetivo.
-                        </p>
-                        <a
-                            href="#"
-                            className="btn-github"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="bi bi-github"></i> Ver no GitHub
-                        </a>
-                        <a
-                            href="#"
-                            className="btn-live"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="bi bi-box-arrow-up-right"></i> Ver Demo
-                        </a>
+                        <div className='d-flex justify-content-between'>
+                            <a
+                                href="#"
+                                className="btn-github"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="bi bi-github"></i> Ver no GitHub
+                            </a>
+                            <a
+                                href="#"
+                                className="btn-live"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="bi bi-box-arrow-up-right"></i> Ver Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
