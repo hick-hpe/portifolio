@@ -154,7 +154,7 @@ const ProjetosList = () => {
                 </div>
 
                 <div className="card">
-                    <img src="/img/image.png" alt="Outro projeto" />
+                    <img src="/img/config.png" alt="Outro projeto" />
                     <div className="card-body">
                         <h5 className="card-title">DevQuiz</h5>
                         <p className="card-text">
@@ -248,15 +248,14 @@ const ProjetosList = () => {
                 </div>
 
                 <div className="card">
-                    <img src="/img/image.png" alt="Outro projeto" />
+                    <img src="/img/coleta-if.png" alt="Outro projeto" />
                     <div className="card-body">
-                        <h5 className="card-title">Título do Projeto</h5>
+                        <h5 className="card-title">Coleta IF</h5>
                         <p className="card-text">
-                            Descrição do projeto. Mostrar funcionalidades ou objetivo.
-                        </p>
+                            ColetaIF é um projeto de extensão do IFPR – Campus Cascavel que tem como objetivo conscientizar a comunidade sobre o lixo eletrônico, seus impactos ambientais e as boas práticas de descarte e reciclagem.                        </p>
                         <div className='d-flex justify-content-between'>
                             <a
-                                href="#"
+                                href="https://github.com/hick-hpe/coleta-if/"
                                 className="btn-github"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -264,7 +263,7 @@ const ProjetosList = () => {
                                 <i className="bi bi-github"></i> Ver no GitHub
                             </a>
                             <a
-                                href="#"
+                                href="https://coleta-if.vercel.app/"
                                 className="btn-live"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -276,7 +275,7 @@ const ProjetosList = () => {
                 </div>
 
                 <div className="card">
-                    <img src="/img/image.png" alt="Outro projeto" />
+                    <img src="/img/config.png" alt="Outro projeto" />
                     <div className="card-body">
                         <h5 className="card-title">Título do Projeto</h5>
                         <p className="card-text">
