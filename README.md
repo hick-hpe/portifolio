@@ -25,4 +25,4 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - Componentização com React
 
 ## 🌐 Servidor online
-Acesso em: [https://portifolio-sable-ten.vercel.app/][https://portifolio-sable-ten.vercel.app/]
+Acesso em: [https://portifolio-sable-ten.vercel.app/](https://portifolio-sable-ten.vercel.app/)
