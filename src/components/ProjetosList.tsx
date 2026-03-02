@@ -50,6 +50,7 @@ const Page = styled.div`
         img {
             height: 160px;
             width: 100%;
+            border-radius: 10px 10px 0 0;
             object-fit: cover;
         }
 
@@ -145,7 +146,7 @@ const ProjetosList = () => {
         {
             nome: "API CEP",
             descricao: "API desenvolvida em Node.js consumindo a API ViaCEP, com tratamento de erros e padronização de respostas.",
-            img: "/img/webapp-vendas.png",
+            img: "/img/api-viacep.png",
             links: {
                 github: "https://github.com/hick-hpe/api-viacep",
                 demo: "https://hick-hpe.github.io/api-viacep/",
